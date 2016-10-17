@@ -2,10 +2,19 @@ body {
    display: flex;
    min-height: 100vh;
    flex-direction: column;
+   background-image: url("img/hero.jpg");
+   background-repeat: no-repeat;
 }
 
 main {
  flex: 1 0 auto;
+}
+
+h2 {
+  color: #FF4081;
+  font-weight: bold;
+  font-size: 32px;
+  display: inline-flex;;
 }
 
 .nav-wrapper {
@@ -18,17 +27,16 @@ main {
   min-height: 380px;
   line-height: 0;
   height: auto;
-  /*color: rgba(255,255,255,.9);*/
+  color: rgba(255,255,255,.9);
 }
+
 .parallax-container .section {
   width: 100%;
 }
 
-#index-banner {
-  top: 10%;
-  display: block;
+.header {
+  position: fixed;
 }
-
 
 .card-container {
   display: flex;
@@ -36,6 +44,22 @@ main {
   justify-content: space-around;
   padding-bottom: 200px;
   padding-top: 20px;
+}
+
+.service-icon {
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  padding-right: 10px;
+  padding-top: 20px;
+}
+
+.btn-large {
+  background-color: #FF4081;
+}
+
+.btn-large:hover {
+  background-color: #FF99C0;
 }
 
 
