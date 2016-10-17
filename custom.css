@@ -1,0 +1,51 @@
+body {
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+}
+
+main {
+ flex: 1 0 auto;
+}
+
+.nav-wrapper {
+  background-color: #1565C0;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  /*color: rgba(255,255,255,.9);*/
+}
+.parallax-container .section {
+  width: 100%;
+}
+
+#index-banner {
+  top: 10%;
+  display: block;
+}
+
+
+.card-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  padding-bottom: 200px;
+  padding-top: 20px;
+}
+
+
+#custom-footer {
+  background-color: #1565C0;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+
+.footer-copyright {
+  background-color: #0D47A1;
+}
