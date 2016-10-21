@@ -2,14 +2,16 @@ body {
    display: flex;
    min-height: 100vh;
    flex-direction: column;
-   background-image: url("img/hero.jpg");
-   background-repeat: no-repeat;
-   background-size: contain;
-   min-width: 960px;
+   /*background-image: url("img/hero.jpg");*/
+   /*background-repeat: no-repeat;*/
+   /*background-size: contain;*/
+   /*min-width: 960px;*/
 }
 
-main {
- flex: 1 0 auto;
+/*Fonts*/
+
+h1 {
+  font-weight: bold;
 }
 
 h2 {
@@ -19,39 +21,86 @@ h2 {
   display: inline-flex;;
 }
 
+h3 {
+
+}
+
 .nav-wrapper {
   background-color: #1565C0;
   padding-right: 20px;
-  padding-left: 100px;
+  padding-left: 10px;
 }
 
+/*Banner*/
+
 .parallax-container {
+  min-height: 380px;
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);
-  /*justify-content: space-around;*/
+
   display: flex;
   flex-flow: column;
   justify-content: center;
-  height: 400px;
 }
 
 .parallax-container .section {
   width: 100%;
 }
 
+.parallax img {
+  display: block;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+
+  .card-container {
+    padding-bottom: 200px;
+  }
+}
+
+/*Row and Column*/
+col 
+
+/*Info Cards*/
+
 .card-container {
   display: flex;
   flex-flow: row;
   flex-wrap: nowrap;
-  justify-content: center;
-  padding-bottom: 200px;
+  justify-content:center;
+  padding-bottom: 160px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+@media only screen and (max-width : 600px) {
+  .card-container {
+    flex-wrap: wrap;
+    padding-bottom: 280px;
+  }
 }
 
 .card {
-  min-height: 250px;
-  /*max-width: 300px;*/
-  /*min-width: 200px;*/
+  /*min-height: 250px;*/
+  /*min-width: 400px;*/
+}
+
+.card-no-shadow {
+  box-shadow: 0 0 0;
 }
 
 .service-icon {
@@ -62,14 +111,18 @@ h2 {
   padding-top: 20px;
 }
 
+/*Buttons*/
+
 .btn-large {
   background-color: #FF4081;
+  z-index: 0;
 }
 
 .btn-large:hover {
   background-color: #FF99C0;
 }
 
+/*Footer*/
 
 #custom-footer {
   background-color: #1565C0;
