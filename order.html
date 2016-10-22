@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Order</title>
+
+
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -11,6 +13,8 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
     <!-- <link rel="stylesheet" href="custom.css"> -->
+
+    <script src="js/script.js" defer></script>
   </head>
   <body>
     <!--Import jQuery before materialize.js-->
@@ -18,9 +22,9 @@
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <nav>
         <div class="nav-wrapper blue darken-3">
-          <a href="#" class="brand-logo">Galvanize Delivers</a>
+          <a href="index.html" class="brand-logo">Galvanize Delivers</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li><a href="sass.html">Order Delivery</a></li>
+              <li class="active"><a href="order.html">Order Delivery</a></li>
           </ul>
         </div>
     </nav>
@@ -38,7 +42,7 @@
                 <p>$8.99</p>
               </div>
               <div class="card-action">
-                <a href="index.html" class="pink-text">ADD TO ORDER</a>
+                <a id="burger" class="pink-text">ADD TO ORDER</a>
               </div>
             </div>
           </div>
@@ -52,7 +56,7 @@
                 <p>$11.99</p>
               </div>
               <div class="card-action">
-                <a href="index.html" class="pink-text">ADD TO ORDER</a>
+                <a id="pizza" href="index.html" class="pink-text">ADD TO ORDER</a>
               </div>
             </div>
           </div>
@@ -66,7 +70,7 @@
                 <p>$14.99</p>
               </div>
               <div class="card-action">
-                <a href="index.html" class="pink-text">ADD TO ORDER</a>
+                <a id="ribs" href="index.html" class="pink-text">ADD TO ORDER</a>
               </div>
             </div>
           </div>
@@ -80,14 +84,14 @@
                 <p>$7.99</p>
               </div>
               <div class="card-action">
-                <a href="index.html" class="pink-text">ADD TO ORDER</a>
+                <a id="icecream" href="index.html" class="pink-text">ADD TO ORDER</a>
               </div>
             </div>
           </div>
         </div>
         <div class="col s12 m5 l5">
           <h4>Order</h4>
-          <table class="striped">
+          <table id="order" class="striped">
             <thead>
               <th data-field="item">Item</th>
               <th class="right-align" data-field="price">Price</th>
@@ -159,11 +163,11 @@
                  <input id="address" type="text" class="validate">
                </div>
              </div>
-
            </form>
+           <div class="center-align">
+            <a class="waves-effect waves-light btn-large pink lighten-1">Button</a>
+           </div>
          </div>
-
-
         </div>
       </div>
     </div>
@@ -177,8 +181,8 @@
                 </div>
                 <div class="col l4 offset-l2 s12">
                     <ul>
-                        <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Order Delivery</a></li>
+                        <li><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
+                        <li><a class="grey-text text-lighten-3" href="order.html">Order Delivery</a></li>
                     </ul>
                 </div>
             </div>
