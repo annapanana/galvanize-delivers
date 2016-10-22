@@ -18,10 +18,10 @@
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <nav>
         <div class="nav-wrapper blue darken-3">
-            <a href="#" class="brand-logo">Galvanize Delivers</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="sass.html">Order Delivery</a></li>
-            </ul>
+          <a href="#" class="brand-logo">Galvanize Delivers</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="sass.html">Order Delivery</a></li>
+          </ul>
         </div>
     </nav>
     <div class="container">
@@ -33,10 +33,12 @@
               <div class="card-image">
                 <img src="img/burger.jpg" alt="burger" />
               </div>
-              <h5>Royale with Cheese</h5>
-              <p>$8.99</p>
+              <div class="card-content">
+                <h5>Royale with Cheese</h5>
+                <p>$8.99</p>
+              </div>
               <div class="card-action">
-                <a href="index.html">THIS IS A LINK</a>
+                <a href="index.html" class="pink-text">ADD TO ORDER</a>
               </div>
             </div>
           </div>
@@ -45,10 +47,12 @@
               <div class="card-image">
                 <img src="img/pizza.jpg" alt="burger" />
               </div>
-              <h5>Arugala Pie</h5>
-              <p>$11.99</p>
+              <div class="card-content">
+                <h5>Arugala Pie</h5>
+                <p>$11.99</p>
+              </div>
               <div class="card-action">
-                <a href="index.html">THIS IS A LINK</a>
+                <a href="index.html" class="pink-text">ADD TO ORDER</a>
               </div>
             </div>
           </div>
@@ -57,10 +61,12 @@
               <div class="card-image">
                 <img src="img/ribs.jpg" alt="burger" />
               </div>
-              <h5>Smoked Swine</h5>
-              <p>$14.99</p>
+              <div class="card-content">
+                <h5>Smoked Swine</h5>
+                <p>$14.99</p>
+              </div>
               <div class="card-action">
-                <a href="index.html">THIS IS A LINK</a>
+                <a href="index.html" class="pink-text">ADD TO ORDER</a>
               </div>
             </div>
           </div>
@@ -69,16 +75,19 @@
               <div class="card-image">
                 <img src="img/ice_cream.jpg" alt="burger" />
               </div>
-              <h5>Ice Cream Biscut</h5>
-              <p>$7.99</p>
+              <div class="card-content">
+                <h5>Ice Cream Biscut</h5>
+                <p>$7.99</p>
+              </div>
               <div class="card-action">
-                <a href="index.html">THIS IS A LINK</a>
+                <a href="index.html" class="pink-text">ADD TO ORDER</a>
               </div>
             </div>
           </div>
         </div>
-        <div style="background-color:red" class="col s12 m5 l5">
-          <table>
+        <div class="col s12 m5 l5">
+          <h4>Order</h4>
+          <table class="striped">
             <thead>
               <th data-field="item">Item</th>
               <th class="right-align" data-field="price">Price</th>
@@ -100,6 +109,10 @@
                 <td>Ice Cream Biscut</td>
                 <td class="right-align">$7.99</td>
               </tr>
+            </tbody>
+          </table>
+          <table>
+            <tbody>
               <tr>
                 <td>Subtotal</td>
                 <td class="right-align">$43.96</td>
@@ -115,23 +128,46 @@
             </tbody>
           </table>
 
-          <!-- contact info -->
-          <div class="section">
-            Name
-          </div>
-          <div class="divider"></div>
-          <div class="section">
-            Phone Number
-          </div>
-          <div class="divider"></div>
-          <div class="section">
-            Address
-          </div>
-          <div class="divider"></div>
-          <a class="waves-effect waves-light btn-large">Place Order</a>
+          <div class="row">
+           <form class="col l12">
+             <div class="row">
+               <div class="input-field col l2">
+                 <img src="img/ic_person_pin_black_24px.svg" alt="" />
+               </div>
+               <div class="input-field col l10">
+                 <label for="name">Name</label>
+                 <input id="name" type="text" class="validate">
+               </div>
+             </div>
+
+             <div class="row">
+               <div class="input-field col l2">
+                 <img src="img/ic_call_black_24px.svg" alt="" />
+               </div>
+               <div class="input-field col l10">
+                 <label for="phone_number">Phone Number</label>
+                 <input id="phone_number" type="text" class="validate">
+               </div>
+             </div>
+
+             <div class="row">
+               <div class="input-field col l2">
+                 <img src="img/ic_location_city_black_24px.svg" alt="" />
+               </div>
+               <div class="input-field col l10">
+                 <label for="address">Address</label>
+                 <input id="address" type="text" class="validate">
+               </div>
+             </div>
+
+           </form>
+         </div>
+
+
         </div>
       </div>
     </div>
+
     <footer class="page-footer blue darken-3" id="custom-footer">
         <div class="container">
             <div class="row">
