@@ -42,7 +42,7 @@
                 <p>$8.99</p>
               </div>
               <div class="card-action">
-                <a id="burger" class="pink-text">ADD TO ORDER</a>
+                <a id="burger" name="Royale with Cheese" class="pink-text">ADD TO ORDER</a>
               </div>
             </div>
           </div>
@@ -91,43 +91,28 @@
         </div>
         <div class="col s12 m5 l5">
           <h4>Order</h4>
-          <table id="order" class="striped">
+          <table class="striped">
             <thead>
               <th data-field="item">Item</th>
               <th class="right-align" data-field="price">Price</th>
             </thead>
-            <tbody class="striped">
-              <tr>
-                <td>Royale with Cheese</td>
-                <td class="right-align">$8.99</td>
-              </tr>
-              <tr>
-                <td>Arugula Pie</td>
-                <td class="right-align">$11.99</td>
-              </tr>
-              <tr>
-                <td>Smoked Swine</td>
-                <td class="right-align">$14.99</td>
-              </tr>
-              <tr>
-                <td>Ice Cream Biscut</td>
-                <td class="right-align">$7.99</td>
-              </tr>
+            <tbody id="order" class="striped">
+              <!-- content will be added from script.js -->
             </tbody>
           </table>
           <table>
             <tbody>
               <tr>
                 <td>Subtotal</td>
-                <td class="right-align">$43.96</td>
+                <td id="subtotal" class="right-align">$0.00</td>
               </tr>
               <tr>
                 <td class="right-align">Tax</td>
-                <td class="right-align">$4.40</td>
+                <td id="tax" class="right-align">$0.00</td>
               </tr>
               <tr>
                 <td class="right-align">Total</td>
-                <td class="right-align">$48.36</td>
+                <td id="total" class="right-align">$0.00</td>
               </tr>
             </tbody>
           </table>
@@ -140,7 +125,7 @@
                </div>
                <div class="input-field col l10">
                  <label for="name">Name</label>
-                 <input id="name" type="text" class="validate">
+                 <input id="name" type="text" class="validate" required>
                </div>
              </div>
 
@@ -150,7 +135,7 @@
                </div>
                <div class="input-field col l10">
                  <label for="phone_number">Phone Number</label>
-                 <input id="phone_number" type="text" class="validate">
+                 <input id="phone_number" type="text" class="validate" required>
                </div>
              </div>
 
@@ -160,12 +145,12 @@
                </div>
                <div class="input-field col l10">
                  <label for="address">Address</label>
-                 <input id="address" type="text" class="validate">
+                 <input id="address" type="text" class="validate" required>
                </div>
              </div>
            </form>
            <div class="center-align">
-            <a class="waves-effect waves-light btn-large pink lighten-1">Button</a>
+            <a id="contact" class="waves-effect waves-light btn-large pink lighten-1">Button</a>
            </div>
          </div>
         </div>
