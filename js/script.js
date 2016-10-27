@@ -17,6 +17,8 @@ var totalValue = 0;
 var contactInfo = [];
 
 $(function() {
+  $('.parallax').parallax();
+  
   $(".food-item").on("click", function(event) {
     // prevent page from reloading
     event.preventDefault();
