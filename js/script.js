@@ -18,6 +18,7 @@ var contactInfo = [];
 
 $(function() {
   $('.parallax').parallax();
+  $(".button-collapse").sideNav();
   
   $(".food-item").on("click", function(event) {
     // prevent page from reloading
