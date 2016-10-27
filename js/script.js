@@ -2,14 +2,11 @@
 
 var menu = {
   "Royale with Cheese": 8.99,
-  pizza: 11.99,
-  ribs: 14.99,
-  icecream: 7.99
+  "Arugula Pie": 11.99,
+  "Smoked Swine": 14.99,
+  "Ice Cream Biscut": 7.99
 };
 
-var orderInfo {
-  
-}
 var order = $("#order");
 var subtotal = $("#subtotal");
 var tax = $("#tax");
@@ -20,9 +17,14 @@ var totalValue = 0;
 var contactInfo = [];
 
 $(function() {
-  $("#burger").on("click", function(event) {
+  $(".food-item").on("click", function(event) {
+    // prevent page from reloading
+    event.preventDefault();
+    // execute order functionality
     updateOrder(event.target.name);
   });
+
+  $()
 
   $("#contact").on("click", function(event) {
     contactInfo = [];
@@ -54,13 +56,11 @@ function updateOrder(item) {
   $(total.text("$" + totalValue));
 }
 
-//1. Type their information into each required textfield of the delivery form.
 function validateInformation(textFields) {
   // check the number of children in order
-  console.log($(order.has("ul")));
-  if ($(order.has("ul")) {
+  if (order.children().length > 0) {
     for (var i = 0; i < textFields.length; i++) {
-      console.log(textFields[i]);
+      // console.log(textFields[i]);
       if (!textFields[i]) {
         // return error message
         Materialize.toast("All contact info must be filled out.")
